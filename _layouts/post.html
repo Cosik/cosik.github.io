@@ -7,8 +7,10 @@ layout: default
 
 <p class="view">by {{ page.author | default: site.author }}</p>
 
-{{content}}
 
+<div class="post-content">
+  {{ content }}
+</div>
 
 {% for tag in page.tags %}
   <!-- 1. Create the clean tag handle first -->

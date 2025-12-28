@@ -45,5 +45,17 @@
         {{ content }}
       </section>
     </div>
+
+    <div id="lightbox-overlay" onclick="this.style.display='none'">
+      <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+    <script>
+      document.querySelectorAll('.post-content img').forEach(img => {
+        img.onclick = function() {
+          document.getElementById('lightbox-img').src = this.src;
+          document.getElementById('lightbox-overlay').style.display = 'flex';
+        };
+      });
+    </script>
   </body>
 </html>
