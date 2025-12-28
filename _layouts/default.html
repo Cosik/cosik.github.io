@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -18,7 +19,17 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
+    <!-- ADD THIS NAVIGATION BLOCK -->
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a> | 
+      {% assign nav_pages = site.pages | sort: "nav_order" %}
+      {% for p in nav_pages %}
+        {% if p.nav_show == true %}
+          <a href="{{ p.url | relative_url }}">{{ p.title }}</a>  | 
+        {% endif %}
+      {% endfor %}
+    </nav>
+    <!-- END NAVIGATION BLOCK -->
         <section id="downloads">
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>

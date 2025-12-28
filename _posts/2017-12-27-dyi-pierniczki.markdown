@@ -4,7 +4,6 @@ title:  "DIY Pierniczki świąteczne"
 date:   2017-12-27
 categories: cooking DIY
 tags: cooking
-author: Cosik
 ---
 
 

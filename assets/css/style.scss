@@ -9,3 +9,49 @@
   display: block;
   margin: 10px 0;
 }
+
+
+.tag {
+  color: #1ff042; /* Classic Hacker Green */
+  text-decoration: none;
+  border-bottom: 1px dashed #1ff042;
+}
+
+.tag:hover {
+  background-color: #1ff042;
+  color: #000;
+}
+
+
+nav {
+  margin-top: 15px;
+  font-family: "Monaco", "Courier New", monospace;
+}
+
+nav a {
+  color: #1ff042;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Create the underscore effect */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 2px;
+  right: 0;
+  background: #1ff042;
+  transition: width .3s ease;
+}
+
+/* Expand the underscore on hover */
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #1ff042;
+}
