@@ -1,0 +1,11 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Custom image scaling class */
+.small-image {
+  max-width: 300px; /* Adjust this width as needed */
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}

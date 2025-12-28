@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+# Status
+
+Page is in migration phase form blogger [Cosik Technicznie](https://cosik-technicznie.blogspot.com/)
