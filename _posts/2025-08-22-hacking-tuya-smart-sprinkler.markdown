@@ -4,6 +4,7 @@ title:  "Hacking Tuya Smart sprinkler / irrigation controller"
 date:   2025-08-25 12:10:00 +0100
 categories: DIY zigbee smarthome esphome
 tags: [DIY, zigbee, smarthome, esphome]
+excerpt: "Making TUYA device cloudless and controll directly by ESPHom/HomeAssistant"
 ---
 
 There are not many dedicated sprinkler controllers on the internet that can be integrated with Home Assistant. Moreover, most available electromagnetic valves use AC, which creates the problem of needing an additional power supply to get them working. Nowadays, you can buy DC coils (for example, Hunter makes some), but they are much more expensive.

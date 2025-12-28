@@ -6,11 +6,14 @@ layout: default
 
 {% if site.posts.size > 0 %}
 <h2>Posts</h2>
-<ul>
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>  
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+  <h3>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h3>
+  <p class="post-excerpt">
+    {{ post.excerpt | strip_html | truncatewords: 30 }}
+  </p>
+  <small>{{ post.date | date: "%B %e, %Y" }}</small>
+  <hr>
+{% endfor %}
 {% endif %}

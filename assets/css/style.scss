@@ -55,3 +55,18 @@ nav a:hover::after {
   left: 0;
   background: #1ff042;
 }
+
+
+.post-excerpt {
+  color: #abb2bf; /* Slightly dimmed gray/white */
+  font-size: 0.9em;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* Optional: Make the "Read More" link look like a prompt */
+.post-excerpt::after {
+  content: " >_";
+  color: #1ff042;
+  font-weight: bold;
+}
