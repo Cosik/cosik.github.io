@@ -1,4 +1,6 @@
 {
+    "$schema": "./node_modules/wrangler/config-schema.json",
+    "preview_urls": true,
     "name": "cosikgithubio",
     "compatibility_date": "2025-12-29",
     "assets": {
