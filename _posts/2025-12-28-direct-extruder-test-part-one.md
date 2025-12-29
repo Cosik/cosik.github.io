@@ -7,22 +7,31 @@ tags: [3d, printing, extruder, flow]
 
 Over time I searched for a good and relatively cheap extruder. My journey with 3D printing started years ago when the Anet A6 was the queen of budget machines, with a crappy extruder. The next machine, which is still alive, is my heavily modified [HEVO](thingiverse.com/thing:2254103). With this printer, another journey with extruders began.
 
+## Table of contents
+{: .no_toc}
+
+* TOC
+{:toc}
+
 ## Bowden Extruders
 
 At the beginning, the world of lightweight and compact extruders didn't exist. They were very heavy and bulky, and for that reason Bowden extruders were the most popular. My first one was the [Mobius 2](https://github.com/VoronDesign/Mobius-Extruder/tree/mobius-2) by Voron Design. This design is very powerful and often tore PTFE tubes out of push fittings.
 
 ![alt](/pic/extruder_test/20190131_171144.jpg){: .small-image}
 *Mobius 2*
+{: .centered-block}
 
 The next natural upgrade was switching to [Mobius 3](https://github.com/VoronDesign/Mobius-Extruder/tree/mobius-3), also by Voron Design — again a powerful construction.
 
 ![alt](/pic/extruder_test/20190208_180418.jpg){: .small-image}
 *Mobius 3*
+{: .centered-block}
 
 My last Bowden extruder was [Rappel](https://github.com/Annex-Engineering/Rappel-Extruder) by Annex-Engineering, mounted at the top of my HEVO enclosure.
 
 ![alt](/pic/extruder_test/rappel.png){: .small-image}
 *Rappel*
+{: .centered-block}
 
 With those extruders, after tweaking, I was able to achieve a retraction level below 2 mm. When I compare those values with direct-drive setups on Enders, such low retraction values are not attainable.
 
@@ -96,14 +105,15 @@ toff: 2
 
 ![alt](/pic/extruder_test/SAM_2346.JPG){: .small-image}
 *Direct drive extruders*
+{: .centered-block}
 
-- [Miró](https://www.printables.com/model/1008903-the-miro-extruder)
-- [Dletgbs](https://www.printables.com/model/1309632-duality-extruder)
-- [ProtoXtruderNX](https://www.printables.com/model/1020272-protoxtruder-nx)
-- ProtoXtruder — mixed reinforced version [this](https://www.printables.com/model/1422009-protoxtruder-skeletonised-front-plate-for-protoxtr) and [this](https://www.printables.com/model/713421-protoxtruder-hgx-xtra-rigid-back)
-- Tsunami (modded by me) https://www.printables.com/model/1429510-tsunami-exturder-09
-- [ProtoXtruder 2.1](https://www.printables.com/model/1052687-protoxtruder-21)
+* [Miró](https://www.printables.com/model/1008903-the-miro-extruder)
+* [Dletgbs](https://www.printables.com/model/1309632-duality-extruder)
+* [ProtoXtruderNX](https://www.printables.com/model/1020272-protoxtruder-nx)
+* ProtoXtruder — mixed reinforced version [this](https://www.printables.com/model/1422009-protoxtruder-skeletonised-front-plate-for-protoxtr) and [this](https://www.printables.com/model/713421-protoxtruder-hgx-xtra-rigid-back)
+* [Tsunami (modded by me)](https://www.printables.com/model/1429510-tsunami-exturder-09)
+* [ProtoXtruder 2.1](https://www.printables.com/model/1052687-protoxtruder-21)
 
 ## To be continued
 
-Tests and results will be split into a few posts; all posts will be summarized and placed on a continuously evolving separate page.
+Tests and results will be split into a few posts; all posts will be summarized and placed on a [continuously evolving separate page]({{ '/extruderflows/' | relative_url }}).

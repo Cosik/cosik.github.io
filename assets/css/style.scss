@@ -7,7 +7,12 @@
   max-width: 300px; /* Adjust this width as needed */
   height: auto;
   display: block;
-  margin: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-block {
+  text-align: center;
 }
 
 
@@ -88,8 +93,8 @@ nav a:hover::after {
 
 /* Enlarged image */
 #lightbox-overlay img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
   border: 2px solid #1ff042; /* Hacker green border */
   box-shadow: 0 0 20px #1ff042;
 }
@@ -97,4 +102,42 @@ nav a:hover::after {
 /* Enable clicking on images */
 .post-content img {
   cursor: zoom-in;
+}
+
+
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  margin: 20px 0;
+
+  figure {
+    width: 45%;      /* Adjust width as needed */
+    margin: 0;
+  }
+
+  img {
+    width: 100%;     /* Fills the 45% figure width */
+    height: auto;    /* Keeps original resolution ratio */
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Target the caption to look like *Miró plot* */
+  figcaption {
+    font-style: italic; 
+    color: #1ff042;
+    font-size: 0.9em;
+  }
+}
+
+/* Stack on mobile */
+@media (max-width: 600px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+    figure { width: 90%; }
+  }
 }
